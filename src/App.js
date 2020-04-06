@@ -1,19 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import pepe  from "./bigpepe.png"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={pepe} className="App-logo" alt="logo" />
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Mel is hot.
+          Damn grl u fine
         </a>
       </header>
     </div>
