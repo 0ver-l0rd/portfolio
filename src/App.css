@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: #282c34;
+  color: #fff;
 }
 
 .App-logo {
@@ -35,4 +36,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-link {
+  color: #fafaf9;
+  display: flex;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.__json-pretty__ {
+  background: none !important;
 }
