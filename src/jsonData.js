@@ -210,3 +210,15 @@ export const keypadData = {
   button1text2: null,
   button1text: null
 };
+
+export const equipmentData = {
+  name: "10 Keypad Power and Controller",
+  maxConnections: 10,
+  loads: [],
+  keypads: ["a8k180000001n30AAA"],
+  jobId: "a8W180000004jv2EAA",
+  id: "a8e180000001WY0AAM",
+  equipmentType: "Lighting",
+  dtProductId: "aBC1800000007DEGAY",
+  controllerType: "Keypads"
+};
