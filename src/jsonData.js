@@ -166,3 +166,47 @@ export const fixtureData = {
   controlTypeLV: "None",
   controlType: "Adaptive Phase"
 };
+
+export const loadData = {
+  roomId: "a8Z18000000TJ7REAW",
+  panelLocationId: null,
+  name: "relay load",
+  moduleType: null,
+  moduleDisplayName: "test",
+  loadNumber: "233",
+  jobId: "a8W180000004gwIEAQ",
+  id: "a8b180000009uULAAY",
+  fixtureQty: 9,
+  fixtureId: "a8c1800000024l4AAA",
+  dtEquipmentId: null,
+  connectionLV: null,
+  connectionHV: "Module"
+};
+
+export const keypadLocationData = {
+  roomId: "a8Z18000000TJ80EAG",
+  name: "Keypad Location 17",
+  keypads: [],
+  jobId: "a8W180000004gwIEAQ",
+  id: "a8d18000000141EAAQ",
+  dtProductId: "aBC18000000076lGAA"
+};
+
+export const keypadData = {
+  position: 1,
+  name: "New Keypad",
+  loadId: null,
+  keypadLocationId: "a8d18000000141KAAQ",
+  id: "a8k180000001mIGAAY",
+  engProductId: null,
+  dtProductId: "aBC180000000799GAA",
+  dtEquipmentId: null,
+  button4text2: null,
+  button4text: null,
+  button3text2: null,
+  button3text: null,
+  button2text2: null,
+  button2text: null,
+  button1text2: null,
+  button1text: null
+};
