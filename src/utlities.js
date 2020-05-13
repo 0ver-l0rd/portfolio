@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const divStyle = {
   display: "grid",
-  gridTemplateColumns: "10% 50% 40%",
+  gridTemplateColumns: "10% 40% 50%",
   border: "1px solid #3f3f3f",
   borderRadius: 4,
   alignItems: "center",
