@@ -1,6 +1,7 @@
 .App {
-  background-color: #282c34;
-  color: #fff;
+  /* background-color: #282c34; */
+  background-color: #1f1f1f;
+  color: #979797;
 }
 
 .App-logo {
@@ -39,7 +40,7 @@
 }
 
 .nav-link {
-  color: #fafaf9;
+  color: #ff5f00;
   display: flex;
   text-decoration: none;
   padding: 20px;

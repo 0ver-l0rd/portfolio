@@ -5,6 +5,13 @@ import pepe from "./bigpepe.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import Jobs from "./Endpoints/Jobs";
+import RoomGroups from "./Endpoints/RoomGroups";
+import Rooms from "./Endpoints/Rooms";
+import Fixtures from "./Endpoints/Fixtures";
+import Loads from "./Endpoints/Loads";
+import Keypads from "./Endpoints/Keypads";
+import Equipment from "./Endpoints/Equipment";
+import Products from "./Endpoints/Products";
 
 const AppGrid = styled.div`
   display: grid;
@@ -30,25 +37,28 @@ function App() {
         <AppGrid>
           <Sidebar>
             <Link className="nav-link" to="/jobs">
-              Jobs
+              JOBS
+            </Link>
+            <Link className="nav-link" to="/roomgroups">
+              ROOM GROUPS
             </Link>
             <Link className="nav-link" to="/rooms">
-              Rooms
+              ROOMS
             </Link>
             <Link className="nav-link" to="/fixtures">
-              Fixtures
+              FIXTURES
             </Link>
             <Link className="nav-link" to="/loads">
-              Loads
+              LOADS
             </Link>
             <Link className="nav-link" to="/keypads">
-              Keypads
+              KEYPADS
             </Link>
             <Link className="nav-link" to="/equipment">
-              Equipment
+              EQUIPMENT
             </Link>
             <Link className="nav-link" to="/products">
-              Products
+              PRODUCTS
             </Link>
           </Sidebar>
           <Content>
@@ -56,22 +66,31 @@ function App() {
               <Route path="/jobs">
                 <Jobs />
               </Route>
+              <Route path="/roomgroups">
+                <RoomGroups />
+              </Route>
+              <Route path="/rooms">
+                <Rooms />
+              </Route>
+              <Route path="/Fixtures">
+                <Fixtures />
+              </Route>
+              <Route path="/Loads">
+                <Loads />
+              </Route>
+              <Route path="/Keypads">
+                <Keypads />
+              </Route>
+              <Route path="/Equipment">
+                <Equipment />
+              </Route>
+              <Route path="/products">
+                <Products />
+              </Route>
             </Switch>
           </Content>
         </AppGrid>
       </Router>
-
-      {/* <header className="App-header">
-        <img src={pepe} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Damn grl u fine
-        </a>
-      </header> */}
     </div>
   );
 }
