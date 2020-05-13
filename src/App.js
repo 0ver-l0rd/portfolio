@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import pepe from "./bigpepe.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import Jobs from "./Endpoints/Jobs";
 import RoomGroups from "./Endpoints/RoomGroups";
@@ -12,6 +12,7 @@ import Loads from "./Endpoints/Loads";
 import Keypads from "./Endpoints/Keypads";
 import Equipment from "./Endpoints/Equipment";
 import Products from "./Endpoints/Products";
+import Panels from "./Endpoints/Panels";
 
 const AppGrid = styled.div`
   display: grid;
@@ -33,7 +34,7 @@ const Content = styled.div`
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter basename="/">
         <AppGrid>
           <Sidebar>
             <Link className="nav-link" to="/jobs">
@@ -56,6 +57,9 @@ function App() {
             </Link>
             <Link className="nav-link" to="/equipment">
               EQUIPMENT
+            </Link>
+            <Link className="nav-link" to="/panels">
+              PANELS
             </Link>
             <Link className="nav-link" to="/products">
               PRODUCTS
@@ -84,13 +88,16 @@ function App() {
               <Route path="/Equipment">
                 <Equipment />
               </Route>
+              <Route path="/panels">
+                <Panels />
+              </Route>
               <Route path="/products">
                 <Products />
               </Route>
             </Switch>
           </Content>
         </AppGrid>
-      </Router>
+      </HashRouter>
     </div>
   );
 }

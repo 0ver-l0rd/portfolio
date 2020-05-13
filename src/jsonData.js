@@ -155,3 +155,14 @@ export const roomData = {
   isShared: false,
   id: "a8Z18000000TJCqEAO"
 };
+
+export const fixtureData = {
+  wattage: 2,
+  partNumber: "x3",
+  name: "xxfixture",
+  manufacturer: "x",
+  jobId: "a8W180000004gwIEAQ",
+  id: "a8c1800000024leAAA",
+  controlTypeLV: "None",
+  controlType: "Adaptive Phase"
+};
