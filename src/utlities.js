@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Container, Row, Col } from "react-bootstrap";
 
 const divStyle = {
   display: "grid",
@@ -82,7 +83,7 @@ export const ContentBlock = styled.div`
 export const ContentHeader = styled.div`
   font-size: 22px;
   margin-bottom: 20px;
-  background-color: #3f3f3f;
+  background: #3f3f3f;
   padding: 20px;
   color: #dbd9d6;
   font-weight: bold;
@@ -91,7 +92,7 @@ export const ContentHeader = styled.div`
 export const ContentSubHeader = styled.div`
   font-size: 12px;
   margin-bottom: 20px;
-  background-color: #3f3f3f;
+  background: rgb(63, 63, 63, 0.5);
   padding: 10px;
   color: #dbd9d6;
   font-weight: bold;
@@ -131,4 +132,30 @@ export const AttrSection = styled.div`
 export const OJ = styled.span`
   color: #ff5f00;
   background-color: #3f3f3f;
+  padding: 1px 3px;
+  border: 1px solid #3f3f3f;
+  border-radius: 6px;
+  font-weight: bold;
+`;
+
+export const DescContainer = styled(Container)`
+  font-size: 12px;
+  margin-bottom: 30px;
+`;
+export const DescText = styled.div`
+  margin-bottom: 30px;
+`;
+export const ObjectContainer = styled(Container)`
+  border: 1px solid #3f3f3f;
+  border-radius: 2px;
+`;
+
+export const ObjectHeader = styled.div`
+  font-size: 12px;
+  margin: 0px -15px 30px -15px;
+  background: rgb(63, 63, 63, 0.5);
+  padding: 10px;
+  color: #dbd9d6;
+  font-weight: bold;
+  text-transform: uppercase;
 `;

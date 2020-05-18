@@ -25,6 +25,54 @@ export const roomGroupData = {
   id: "aBK180000000EArGAM"
 };
 
+export const panelData = {
+  roomId: "a8Z18000000TJCrEAO",
+  panelType: "QO",
+  panelSize: 42,
+  name: "Test API Panel",
+  modules: [],
+  jobId: "a8W180000004jv2EAA",
+  id: "a8a1800000092eFAAQ",
+  circuits: []
+};
+
+export const moduleData = {
+  voltage: 120,
+  size: 2,
+  panelSlot: 1,
+  panelId: "a8a1800000092eFAAQ",
+  output_B_loadId: null,
+  output_B_circuitId: null,
+  output_B_capacity: 300,
+  output_A_loadId: "a8b180000009whkAAA",
+  output_A_circuitId: "aBT1800000005QzGAI",
+  output_A_capacity: 300,
+  name: "QO Dual Forward Phase Dimmer",
+  image: null,
+  id: "aBS180000000GUXGA2",
+  elementType: "Module",
+  dtProductId: "aBC1800000007BEGAY",
+  capacityUse: 120,
+  capacityTotal: 600
+};
+
+export const circuitData = {
+  voltage: 120,
+  size: 1,
+  powerCapacity: 1440,
+  panelSlot: 5,
+  panelId: "a8a1800000092eFAAQ",
+  name: "APICircuit",
+  loads: ["a8b180000009whkAAA", "a8b180000009wm6AAA"],
+  image: null,
+  id: "aBT1800000005QzGAI",
+  elementType: "Breaker",
+  dtProductId: "aBC1800000007RpGAI",
+  color: "#ff5f00",
+  capacityUse: 240,
+  amperage: 15
+};
+
 export const jobData = {
   roomGroups: [
     {

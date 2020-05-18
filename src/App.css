@@ -40,10 +40,15 @@
 }
 
 .nav-link {
-  color: #ff5f00;
+  color: #fff;
   display: flex;
   text-decoration: none;
   padding: 20px;
+}
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: underline;
+  color: #ff5f00;
 }
 
 .__json-pretty__ {
