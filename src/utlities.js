@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
 
 const divStyle = {
   display: "grid",

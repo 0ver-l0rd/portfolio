@@ -1,4 +1,5 @@
 import React from "react";
+import Accordion from "react-bootstrap/Accordion";
 import styled from "styled-components";
 import JSONPretty from "react-json-pretty";
 import "react-json-pretty/themes/monikai.css";
@@ -37,11 +38,45 @@ const RoomGroup = props => {
         desc="Update the name/sequence"
       />
       <br />
+      <Accordion>
+        <div>
+          <Accordion.Toggle eventKey="0" as="div">
+            <Resource
+              method="PUT"
+              uri="/jobs/:jobId/roomgroups/:roomGroupId?bulk=true/false"
+              desc="Bulk upsert multiple rooms"
+              expandable={true}
+            />
+          </Accordion.Toggle>
+
+          <Accordion.Collapse eventKey="0">
+            <ContentBlock>
+              <AttributesDiv>
+                <ContentSubHeader>Description</ContentSubHeader>
+                <AttrSection>
+                  Pass the entire room group object. SF will perform an upsert
+                  on every room object in the <OJ>rooms</OJ> array. If the room
+                  does not exist, SF will create a new room with specified
+                  values. If it does exist, SF will update the existing room
+                  with any changed values.
+                </AttrSection>
+              </AttributesDiv>
+              <JsonDiv>
+                <CodeHeader>Room Group Object</CodeHeader>
+                <JSONPretty id="json-rg" data={roomGroupData}></JSONPretty>
+              </JsonDiv>
+            </ContentBlock>
+          </Accordion.Collapse>
+        </div>
+      </Accordion>
+
+      <br />
       <Resource
         method="DELETE"
         uri="/jobs/:jobId/roomgroups/:roomGroupId"
         desc="Deletes Group and all rooms within"
       />
+
       <br />
       <ContentBlock>
         <AttributesDiv>
